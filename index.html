@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pizza</title>
+</head>
+
+<body style="
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #1b1c30, #292a38);
+">
+
+    <div style="
+        background: rgba(0,0,0,0.75);
+        padding: 30px;
+        border-radius: 20px;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        text-align: center;
+        color: white;
+    ">
+
+        <h1 style="margin-bottom: 20px;">Cadastro de Pizza 🍕</h1>
+
+        <form>
+
+            <input type="text" placeholder="Nome da Pizza" required
+            style="
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 12px;
+                border-radius: 10px;
+                border: none;
+                background: #2f3045;
+                color: white;
+            ">
+
+            <select style="
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 12px;
+                border-radius: 10px;
+                border: none;
+                background: #2f3045;
+                color: white;
+            ">
+                <option>Tipo de Massa</option>
+                <option>Fina</option>
+                <option>Grossa</option>
+                <option>Pan</option>
+                <option>Sem Glúten</option>
+            </select>
+
+            <select style="
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 12px;
+                border-radius: 10px;
+                border: none;
+                background: #2f3045;
+                color: white;
+            ">
+                <option>Sabor</option>
+                <option>Mussarela</option>
+                <option>Calabresa</option>
+                <option>Frango</option>
+                <option>Vegetariana</option>
+                <option>Portuguesa</option>
+            </select>
+
+            <input type="text" placeholder="Ingredientes adicionais"
+            style="
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 15px;
+                border-radius: 10px;
+                border: none;
+                background: #2f3045;
+                color: white;
+            ">
+
+            <button type="submit"
+            style="
+                width: 100%;
+                padding: 12px;
+                border: none;
+                border-radius: 20px;
+                background: #ff6347;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: 0.3s;
+            "
+            onmouseover="this.style.background='#ff4500'"
+            onmouseout="this.style.background='#ff6347'">
+                Cadastrar Pizza
+            </button>
+
+        </form>
+    </div>
+
+</body>
+</html>
